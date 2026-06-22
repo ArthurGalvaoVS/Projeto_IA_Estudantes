@@ -1,4 +1,13 @@
 # Dashboard de Impacto da Inteligência Artificial no Desempenho e Bem-Estar Estudantil
+Estudantes & IA — Dashboard Analítico de Impacto da Inteligência Artificial na Vida Acadêmica
+
+Autores: Arthur Galvão e Arthur Machado
+
+Disciplina: Business Intelligence II — CEUB
+
+Última Atualização: Junho de 2026
+
+---
 
 Este repositório contém a estrutura de modelagem e relatórios do projeto de Business Intelligence II, voltado à análise do impacto de ferramentas de Inteligência Artificial Generativa no cotidiano e na saúde mental de estudantes universitários. O projeto está estruturado no formato nativo do Power BI Project (`.pbip`), viabilizando o controle de versão e a governança de dados como código.
 
