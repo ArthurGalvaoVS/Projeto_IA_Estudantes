@@ -1,0 +1,1201 @@
+{
+  "compatibilityLevel": 1600,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"fato_desempenho\",\"dim_estudante\",\"dim_area\",\"dim_burnout\",\"dim_usabilidade\",\"dim_prompt\",\"dim_permissividade\",\"MEDIDAS\",\"dim_ansiedade\",\"dim_dependencia\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.132.1053.0 (24.08)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "pt-BR",
+    "cultures": [
+      {
+        "name": "pt-BR",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "a6ef0ace-5e7c-75f8-c12c-54b485c20176",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Student_ID",
+        "fromTable": "fato_desempenho",
+        "toColumn": "Student_ID",
+        "toTable": "dim_dependencia"
+      },
+      {
+        "name": "e305065f-801a-8eb8-48b3-e70dbddedc75",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Student_ID",
+        "fromTable": "fato_desempenho",
+        "toColumn": "Student_ID",
+        "toTable": "dim_permissividade"
+      },
+      {
+        "name": "672fe6f1-4a5c-b192-48ba-0d7fb9e31c9a",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Student_ID",
+        "fromTable": "fato_desempenho",
+        "toColumn": "Student_ID",
+        "toTable": "dim_prompt"
+      },
+      {
+        "name": "ad11a2a2-6d90-1c31-4416-e6b7fba30ed0",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Student_ID",
+        "fromTable": "fato_desempenho",
+        "toColumn": "Student_ID",
+        "toTable": "dim_burnout"
+      },
+      {
+        "name": "5d58a2dc-4738-1fef-9f31-92b26a51f00e",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Student_ID",
+        "fromTable": "fato_desempenho",
+        "toColumn": "Student_ID",
+        "toTable": "dim_usabilidade"
+      },
+      {
+        "name": "66027a8c-9039-27f3-0eba-78d900a8dec1",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Student_ID",
+        "fromTable": "fato_desempenho",
+        "toColumn": "Student_ID",
+        "toTable": "dim_estudante"
+      },
+      {
+        "name": "6a3c6acf-7a1c-2b08-4f97-77274c9f27fe",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Student_ID",
+        "fromTable": "fato_desempenho",
+        "toColumn": "Student_ID",
+        "toTable": "dim_ansiedade"
+      },
+      {
+        "name": "07e535bc-cf0c-5c69-7e21-09b5db0d3bcc",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Student_ID",
+        "fromTable": "fato_desempenho",
+        "toColumn": "Student_ID",
+        "toTable": "dim_area"
+      }
+    ],
+    "roles": [
+      {
+        "name": "Adm",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "29231b13f81847d6acadc3135a1cf367"
+          }
+        ],
+        "modelPermission": "read"
+      },
+      {
+        "name": "Arts",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "58860494cd5f40769d15e08634fd0462"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_area",
+            "filterExpression": "[Major_Category] == \"Arts\""
+          }
+        ]
+      },
+      {
+        "name": "Business",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "2a398b1edf034eb9b7a566d0506f6526"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_area",
+            "filterExpression": "[Major_Category] == \"Business\""
+          }
+        ]
+      },
+      {
+        "name": "Humanities",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "f8ed41b201ba49fbb7957de0c6cdcf91"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_area",
+            "filterExpression": "[Major_Category] == \"Humanities\""
+          }
+        ]
+      },
+      {
+        "name": "STEM",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "63a60c8d13dc44c5a211457de0c82f37"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_area",
+            "filterExpression": "[Major_Category] == \"STEM\""
+          }
+        ]
+      }
+    ],
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "fato_desempenho",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Student_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "79676a5b-0123-4025-bc82-8e93adefde70",
+            "sourceColumn": "Student_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Major_Category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6023ebfe-86f1-460c-b1f6-4ce5e29d5b8e",
+            "sourceColumn": "Major_Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Primary_Use_Case",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "921f0599-20ae-4131-827b-2f7c8d6d6d48",
+            "sourceColumn": "Primary_Use_Case",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Prompt_Engineering_Skill",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b98dc38a-8bc4-4b9f-a18c-26c223c252bd",
+            "sourceColumn": "Prompt_Engineering_Skill",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Perceived_AI_Dependency",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8fabe299-7600-4d9d-a88e-22ef33bff619",
+            "sourceColumn": "Perceived_AI_Dependency",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Institutional_Policy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "55371fc6-0465-4e93-844a-1a42ca332d63",
+            "sourceColumn": "Institutional_Policy",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Anxiety_Level_During_Exams",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a083af22-abf1-4ff6-abc5-0cbec76c31e1",
+            "sourceColumn": "Anxiety_Level_During_Exams",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Burnout_Risk_Level",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ba642861-d7cd-4f82-9c55-a2091c94900c",
+            "sourceColumn": "Burnout_Risk_Level",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "92c28455-c448-415c-bd44-f5e43ccdf650",
+        "partitions": [
+          {
+            "name": "fato_desempenho",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\a.galvao\\Downloads\\archive\\ai_student_impact_dataset (1).csv\"),[Delimiter=\",\", Columns=16, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Student_ID\", Int64.Type}, {\"Major_Category\", type text}, {\"Year_of_Study\", type text}, {\"Pre_Semester_GPA\", Int64.Type}, {\"Weekly_GenAI_Hours\", Int64.Type}, {\"Primary_Use_Case\", type text}, {\"Prompt_Engineering_Skill\", type text}, {\"Tool_Diversity\", Int64.Type}, {\"Paid_Subscription\", type logical}, {\"Traditional_Study_Hours\", Int64.Type}, {\"Perceived_AI_Dependency\", Int64.Type}, {\"Institutional_Policy\", type text}, {\"Anxiety_Level_During_Exams\", Int64.Type}, {\"Post_Semester_GPA\", Int64.Type}, {\"Skill_Retention_Score\", Int64.Type}, {\"Burnout_Risk_Level\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Pre_Semester_GPA\", \"Weekly_GenAI_Hours\", \"Tool_Diversity\", \"Paid_Subscription\", \"Traditional_Study_Hours\", \"Post_Semester_GPA\", \"Skill_Retention_Score\", \"Year_of_Study\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_c1ea2aa1-2d40-4e7c-8a30-8550b4c7881d",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "68db382c-f944-4c3c-a3b3-47ca9ffbda49",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "dab02184-bdb5-4ef1-856a-7954c012a4e8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "8bc42818-19ad-4bce-a071-40b08ed405c7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "6a462a75-f3e6-48e9-8ca9-b2492f6723bc",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "053f2009-39e5-4403-afe2-7ce508045dbf",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "ff4ac45a-d957-4af2-813e-786b82ad286c",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "69fc26e8-66a9-4925-a288-a548b0376922",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "04afd2aa-a31a-47b7-8886-07d01ec27690",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "3c0234f3-6dd9-4fed-b2b6-aa7fe3655d86",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "78350dee-d7c1-4938-bf5f-f642a41fab11",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "d70ff680-e6b3-4c37-943d-91394bab66e1",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "534790a2-f564-41e9-8050-72035f4c91b2"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "1a957853-f4e2-4ab5-9bdf-6ed56bd17c01",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_c1ea2aa1-2d40-4e7c-8a30-8550b4c7881d",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_estudante",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Student_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cdbb6c45-bec6-469a-aeb0-32fd6861f0eb",
+            "sourceColumn": "Student_ID",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "96c0fa70-6751-4be8-811d-227e85dd2935",
+        "partitions": [
+          {
+            "name": "dim_estudante",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\a.galvao\\Downloads\\archive\\ai_student_impact_dataset (1).csv\"),[Delimiter=\",\", Columns=16, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Student_ID\", Int64.Type}, {\"Major_Category\", type text}, {\"Year_of_Study\", type text}, {\"Pre_Semester_GPA\", Int64.Type}, {\"Weekly_GenAI_Hours\", Int64.Type}, {\"Primary_Use_Case\", type text}, {\"Prompt_Engineering_Skill\", type text}, {\"Tool_Diversity\", Int64.Type}, {\"Paid_Subscription\", type logical}, {\"Traditional_Study_Hours\", Int64.Type}, {\"Perceived_AI_Dependency\", Int64.Type}, {\"Institutional_Policy\", type text}, {\"Anxiety_Level_During_Exams\", Int64.Type}, {\"Post_Semester_GPA\", Int64.Type}, {\"Skill_Retention_Score\", Int64.Type}, {\"Burnout_Risk_Level\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Major_Category\", \"Year_of_Study\", \"Pre_Semester_GPA\", \"Weekly_GenAI_Hours\", \"Primary_Use_Case\", \"Prompt_Engineering_Skill\", \"Tool_Diversity\", \"Paid_Subscription\", \"Traditional_Study_Hours\", \"Perceived_AI_Dependency\", \"Institutional_Policy\", \"Anxiety_Level_During_Exams\", \"Post_Semester_GPA\", \"Skill_Retention_Score\", \"Burnout_Risk_Level\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_area",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Student_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4e4b60bf-e56f-470b-b874-685be7c36271",
+            "sourceColumn": "Student_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Major_Category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6a5e1cbe-09c2-4bb5-a30b-553758af18c4",
+            "sourceColumn": "Major_Category",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "4eefb4ff-bed2-4481-b1f7-627fe7abbd88",
+        "partitions": [
+          {
+            "name": "dim_area",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\a.galvao\\Downloads\\archive\\ai_student_impact_dataset (1).csv\"),[Delimiter=\",\", Columns=16, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Student_ID\", Int64.Type}, {\"Major_Category\", type text}, {\"Year_of_Study\", type text}, {\"Pre_Semester_GPA\", Int64.Type}, {\"Weekly_GenAI_Hours\", Int64.Type}, {\"Primary_Use_Case\", type text}, {\"Prompt_Engineering_Skill\", type text}, {\"Tool_Diversity\", Int64.Type}, {\"Paid_Subscription\", type logical}, {\"Traditional_Study_Hours\", Int64.Type}, {\"Perceived_AI_Dependency\", Int64.Type}, {\"Institutional_Policy\", type text}, {\"Anxiety_Level_During_Exams\", Int64.Type}, {\"Post_Semester_GPA\", Int64.Type}, {\"Skill_Retention_Score\", Int64.Type}, {\"Burnout_Risk_Level\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Year_of_Study\", \"Pre_Semester_GPA\", \"Weekly_GenAI_Hours\", \"Primary_Use_Case\", \"Prompt_Engineering_Skill\", \"Tool_Diversity\", \"Paid_Subscription\", \"Traditional_Study_Hours\", \"Perceived_AI_Dependency\", \"Institutional_Policy\", \"Anxiety_Level_During_Exams\", \"Post_Semester_GPA\", \"Skill_Retention_Score\", \"Burnout_Risk_Level\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_burnout",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Student_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6c81c4f0-45a4-4714-aa8d-743b8486f3b8",
+            "sourceColumn": "Student_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Burnout_Risk_Level",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c32de705-543e-43fe-ac70-4a4a90664ed8",
+            "sourceColumn": "Burnout_Risk_Level",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d5dcb9f0-5eb7-48c0-b6f3-8866d921a69c",
+        "partitions": [
+          {
+            "name": "dim_burnout",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\a.galvao\\Downloads\\archive\\ai_student_impact_dataset (1).csv\"),[Delimiter=\",\", Columns=16, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Student_ID\", Int64.Type}, {\"Major_Category\", type text}, {\"Year_of_Study\", type text}, {\"Pre_Semester_GPA\", Int64.Type}, {\"Weekly_GenAI_Hours\", Int64.Type}, {\"Primary_Use_Case\", type text}, {\"Prompt_Engineering_Skill\", type text}, {\"Tool_Diversity\", Int64.Type}, {\"Paid_Subscription\", type logical}, {\"Traditional_Study_Hours\", Int64.Type}, {\"Perceived_AI_Dependency\", Int64.Type}, {\"Institutional_Policy\", type text}, {\"Anxiety_Level_During_Exams\", Int64.Type}, {\"Post_Semester_GPA\", Int64.Type}, {\"Skill_Retention_Score\", Int64.Type}, {\"Burnout_Risk_Level\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Major_Category\", \"Year_of_Study\", \"Pre_Semester_GPA\", \"Weekly_GenAI_Hours\", \"Primary_Use_Case\", \"Prompt_Engineering_Skill\", \"Tool_Diversity\", \"Paid_Subscription\", \"Traditional_Study_Hours\", \"Perceived_AI_Dependency\", \"Institutional_Policy\", \"Anxiety_Level_During_Exams\", \"Post_Semester_GPA\", \"Skill_Retention_Score\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_usabilidade",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Student_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b900f3f3-b83c-4502-85c5-e01f8654652d",
+            "sourceColumn": "Student_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Primary_Use_Case",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d45afc6a-8098-434a-ab81-d80cb8842618",
+            "sourceColumn": "Primary_Use_Case",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b51c813a-86bd-4c44-956d-f4faf5853ff2",
+        "partitions": [
+          {
+            "name": "dim_usabilidade",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\a.galvao\\Downloads\\archive\\ai_student_impact_dataset (1).csv\"),[Delimiter=\",\", Columns=16, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Student_ID\", Int64.Type}, {\"Major_Category\", type text}, {\"Year_of_Study\", type text}, {\"Pre_Semester_GPA\", Int64.Type}, {\"Weekly_GenAI_Hours\", Int64.Type}, {\"Primary_Use_Case\", type text}, {\"Prompt_Engineering_Skill\", type text}, {\"Tool_Diversity\", Int64.Type}, {\"Paid_Subscription\", type logical}, {\"Traditional_Study_Hours\", Int64.Type}, {\"Perceived_AI_Dependency\", Int64.Type}, {\"Institutional_Policy\", type text}, {\"Anxiety_Level_During_Exams\", Int64.Type}, {\"Post_Semester_GPA\", Int64.Type}, {\"Skill_Retention_Score\", Int64.Type}, {\"Burnout_Risk_Level\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Year_of_Study\", \"Pre_Semester_GPA\", \"Weekly_GenAI_Hours\", \"Prompt_Engineering_Skill\", \"Tool_Diversity\", \"Paid_Subscription\", \"Traditional_Study_Hours\", \"Perceived_AI_Dependency\", \"Institutional_Policy\", \"Anxiety_Level_During_Exams\", \"Post_Semester_GPA\", \"Skill_Retention_Score\", \"Burnout_Risk_Level\", \"Major_Category\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_prompt",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Student_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8da113d1-f152-433e-97b4-957fa2e9c2a1",
+            "sourceColumn": "Student_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Prompt_Engineering_Skill",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c9ce3467-0382-42fc-a6e7-6e647336d134",
+            "sourceColumn": "Prompt_Engineering_Skill",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d57ea6d0-b0ec-4315-adf8-93c15fb14ac9",
+        "partitions": [
+          {
+            "name": "dim_prompt",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\a.galvao\\Downloads\\archive\\ai_student_impact_dataset (1).csv\"),[Delimiter=\",\", Columns=16, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Student_ID\", Int64.Type}, {\"Major_Category\", type text}, {\"Year_of_Study\", type text}, {\"Pre_Semester_GPA\", Int64.Type}, {\"Weekly_GenAI_Hours\", Int64.Type}, {\"Primary_Use_Case\", type text}, {\"Prompt_Engineering_Skill\", type text}, {\"Tool_Diversity\", Int64.Type}, {\"Paid_Subscription\", type logical}, {\"Traditional_Study_Hours\", Int64.Type}, {\"Perceived_AI_Dependency\", Int64.Type}, {\"Institutional_Policy\", type text}, {\"Anxiety_Level_During_Exams\", Int64.Type}, {\"Post_Semester_GPA\", Int64.Type}, {\"Skill_Retention_Score\", Int64.Type}, {\"Burnout_Risk_Level\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Major_Category\", \"Year_of_Study\", \"Pre_Semester_GPA\", \"Weekly_GenAI_Hours\", \"Primary_Use_Case\", \"Tool_Diversity\", \"Paid_Subscription\", \"Traditional_Study_Hours\", \"Perceived_AI_Dependency\", \"Institutional_Policy\", \"Anxiety_Level_During_Exams\", \"Post_Semester_GPA\", \"Skill_Retention_Score\", \"Burnout_Risk_Level\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_permissividade",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Student_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "549a08cc-64ea-4fb2-9fd1-38e69d0c636a",
+            "sourceColumn": "Student_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Institutional_Policy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7c9b767c-221f-4e3f-b79f-dc1c88fb1cc9",
+            "sourceColumn": "Institutional_Policy",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "cfe10e91-c07b-48f0-9995-27ee60481377",
+        "partitions": [
+          {
+            "name": "dim_permissividade",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\a.galvao\\Downloads\\archive\\ai_student_impact_dataset (1).csv\"),[Delimiter=\",\", Columns=16, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Student_ID\", Int64.Type}, {\"Major_Category\", type text}, {\"Year_of_Study\", type text}, {\"Pre_Semester_GPA\", Int64.Type}, {\"Weekly_GenAI_Hours\", Int64.Type}, {\"Primary_Use_Case\", type text}, {\"Prompt_Engineering_Skill\", type text}, {\"Tool_Diversity\", Int64.Type}, {\"Paid_Subscription\", type logical}, {\"Traditional_Study_Hours\", Int64.Type}, {\"Perceived_AI_Dependency\", Int64.Type}, {\"Institutional_Policy\", type text}, {\"Anxiety_Level_During_Exams\", Int64.Type}, {\"Post_Semester_GPA\", Int64.Type}, {\"Skill_Retention_Score\", Int64.Type}, {\"Burnout_Risk_Level\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Major_Category\", \"Year_of_Study\", \"Pre_Semester_GPA\", \"Weekly_GenAI_Hours\", \"Primary_Use_Case\", \"Prompt_Engineering_Skill\", \"Tool_Diversity\", \"Paid_Subscription\", \"Traditional_Study_Hours\", \"Perceived_AI_Dependency\", \"Anxiety_Level_During_Exams\", \"Post_Semester_GPA\", \"Skill_Retention_Score\", \"Burnout_Risk_Level\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEDIDAS",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ],
+        "columns": [
+          {
+            "name": "MEDIDAS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "def237ea-cdd1-425f-b49f-6bb48c68ef02",
+            "sourceColumn": "MEDIDAS",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "81806812-4e91-4ab8-b37f-7d41b3b62fe7",
+        "measures": [
+          {
+            "name": "Total Alunos",
+            "expression": "COUNTROWS(dim_estudante)",
+            "formatString": "0",
+            "lineageTag": "dd902377-8f86-4967-aa92-f7afc86f0a08"
+          },
+          {
+            "name": "Media Ansiedade",
+            "expression": "AVERAGE(dim_ansiedade[Anxiety_Level_During_Exams])",
+            "formatString": "0",
+            "lineageTag": "7d056b72-3473-40de-b775-422956adbe7b"
+          },
+          {
+            "name": "Media Dependencia",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "AVERAGE(dim_dependencia[Perceived_AI_Dependency])",
+            "lineageTag": "dedb9653-c6e8-428b-82b0-de62ec560f10"
+          },
+          {
+            "name": "Total de Areas",
+            "expression": "DISTINCTCOUNT(dim_area[Major_Category])",
+            "formatString": "0",
+            "lineageTag": "2c8592d3-6d9a-425f-b23c-832cf0bd8a43"
+          },
+          {
+            "name": "Burnout alto",
+            "expression": "COUNTROWS(FILTER(dim_burnout, dim_burnout[Burnout_Risk_Level]= \"high\" ))",
+            "formatString": "0",
+            "lineageTag": "c46ce6b2-99a2-4009-9aa2-60b366c04fe3"
+          },
+          {
+            "name": "Delta Ansiedade Política",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    AVERAGE('fato_desempenho'[Anxiety_Level_During_Exams]),",
+              "    'dim_permissividade'[Institutional_Policy] = \"Strict_Ban\"",
+              ")",
+              "-",
+              "CALCULATE(",
+              "    AVERAGE('fato_desempenho'[Anxiety_Level_During_Exams]),",
+              "    'dim_permissividade'[Institutional_Policy] = \"Actively_Encouraged\"",
+              ")"
+            ],
+            "lineageTag": "25b593ec-8b53-40fc-b9f6-5e18909345a9"
+          },
+          {
+            "name": "Ansiedade Strict Ban",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    AVERAGE('dim_ansiedade'[Anxiety_Level_During_Exams]),",
+              "    'dim_permissividade'[Institutional_Policy] = \"Strict_Ban\"",
+              ")"
+            ],
+            "lineageTag": "27ba4e93-ce90-47d4-8b43-a3549669cb2a"
+          },
+          {
+            "name": "Dependência Média Iniciantes",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    AVERAGE('dim_dependencia'[Perceived_AI_Dependency]),",
+              "    'dim_prompt'[Prompt_Engineering_Skill] = \"Beginner\"",
+              ")"
+            ],
+            "lineageTag": "1f1fe719-0672-46ed-8340-3e9d5848e235"
+          },
+          {
+            "name": "Ansiedade IA Incentivada",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    AVERAGE('dim_ansiedade'[Anxiety_Level_During_Exams]),",
+              "    'dim_permissividade'[Institutional_Policy] = \"Actively_Encouraged\"",
+              ")"
+            ],
+            "lineageTag": "6afb69c9-480a-498b-85a0-fb2c7ac73528"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "MEDIDAS",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = \"\"",
+                "in",
+                "    Fonte"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_ansiedade",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Student_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a40b0053-a429-41f3-9e55-236a5b01d453",
+            "sourceColumn": "Student_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Anxiety_Level_During_Exams",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5d53d4ef-8ba9-43eb-9d82-13619c0fdff7",
+            "sourceColumn": "Anxiety_Level_During_Exams",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Personalizar",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3d465227-b469-43ab-bf77-043242ee0e8f",
+            "sourceColumn": "Personalizar",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "2c038cb9-b778-451a-babb-8156a8c61ee3",
+        "partitions": [
+          {
+            "name": "dim_ansiedade",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\a.galvao\\Downloads\\archive\\ai_student_impact_dataset (1).csv\"),[Delimiter=\",\", Columns=16, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Student_ID\", Int64.Type}, {\"Major_Category\", type text}, {\"Year_of_Study\", type text}, {\"Pre_Semester_GPA\", Int64.Type}, {\"Weekly_GenAI_Hours\", Int64.Type}, {\"Primary_Use_Case\", type text}, {\"Prompt_Engineering_Skill\", type text}, {\"Tool_Diversity\", Int64.Type}, {\"Paid_Subscription\", type logical}, {\"Traditional_Study_Hours\", Int64.Type}, {\"Perceived_AI_Dependency\", Int64.Type}, {\"Institutional_Policy\", type text}, {\"Anxiety_Level_During_Exams\", Int64.Type}, {\"Post_Semester_GPA\", Int64.Type}, {\"Skill_Retention_Score\", Int64.Type}, {\"Burnout_Risk_Level\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Major_Category\", \"Year_of_Study\", \"Pre_Semester_GPA\", \"Weekly_GenAI_Hours\", \"Primary_Use_Case\", \"Prompt_Engineering_Skill\", \"Tool_Diversity\", \"Paid_Subscription\", \"Traditional_Study_Hours\", \"Perceived_AI_Dependency\", \"Institutional_Policy\", \"Post_Semester_GPA\", \"Skill_Retention_Score\", \"Burnout_Risk_Level\"}),",
+                "    #\"Coluna Condicional Adicionada\" = Table.AddColumn(#\"Colunas Removidas\", \"Personalizar\", each if [Anxiety_Level_During_Exams] = 1 then \"pouco ansioso\" else null),",
+                "    #\"Colunas Removidas1\" = Table.RemoveColumns(#\"Coluna Condicional Adicionada\",{\"Personalizar\"}),",
+                "    #\"Personalização Adicionada\" = Table.AddColumn(#\"Colunas Removidas1\", \"Personalizar\", each if [Anxiety_Level_During_Exams] <= 2 then \"Baixa\"",
+                "  else if [Anxiety_Level_During_Exams] <= 4 then \"Moderada\"",
+                "  else if [Anxiety_Level_During_Exams] <= 6 then \"Elevada\"",
+                "  else if [Anxiety_Level_During_Exams] <= 8 then \"Alta\"",
+                "  else \"Crítica\")",
+                "in",
+                "    #\"Personalização Adicionada\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_dependencia",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Student_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2cb7a7d9-97d8-4dc6-bd98-0c060201feb1",
+            "sourceColumn": "Student_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Perceived_AI_Dependency",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b21f4b1e-2313-40e5-b12a-9a30e6c71682",
+            "sourceColumn": "Perceived_AI_Dependency",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Categoria_dependencia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cb0afb0d-5533-4e0f-93d7-ef7ea1076915",
+            "sourceColumn": "Categoria_dependencia",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d533e54e-ec46-46ed-9529-1dd4cb24b32e",
+        "partitions": [
+          {
+            "name": "dim_dependencia",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\a.galvao\\Downloads\\archive\\ai_student_impact_dataset (1).csv\"),[Delimiter=\",\", Columns=16, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Student_ID\", Int64.Type}, {\"Major_Category\", type text}, {\"Year_of_Study\", type text}, {\"Pre_Semester_GPA\", Int64.Type}, {\"Weekly_GenAI_Hours\", Int64.Type}, {\"Primary_Use_Case\", type text}, {\"Prompt_Engineering_Skill\", type text}, {\"Tool_Diversity\", Int64.Type}, {\"Paid_Subscription\", type logical}, {\"Traditional_Study_Hours\", Int64.Type}, {\"Perceived_AI_Dependency\", Int64.Type}, {\"Institutional_Policy\", type text}, {\"Anxiety_Level_During_Exams\", Int64.Type}, {\"Post_Semester_GPA\", Int64.Type}, {\"Skill_Retention_Score\", Int64.Type}, {\"Burnout_Risk_Level\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Major_Category\", \"Year_of_Study\", \"Pre_Semester_GPA\", \"Weekly_GenAI_Hours\", \"Primary_Use_Case\", \"Prompt_Engineering_Skill\", \"Tool_Diversity\", \"Paid_Subscription\", \"Traditional_Study_Hours\", \"Institutional_Policy\", \"Anxiety_Level_During_Exams\", \"Post_Semester_GPA\", \"Skill_Retention_Score\", \"Burnout_Risk_Level\"}),",
+                "    #\"Personalização Adicionada\" = Table.AddColumn(#\"Colunas Removidas\", \"Categoria_dependencia\", each if [Perceived_AI_Dependency] <= 2 then \"Independente\"",
+                "else if [Perceived_AI_Dependency] <= 4 then \"Uso Pontual\"",
+                "else if [Perceived_AI_Dependency] <= 6 then \"Uso Regular\"",
+                "else if [Perceived_AI_Dependency] <= 8 then \"Dependente\"",
+                "else \"Muito Dependente\")",
+                "in",
+                "    #\"Personalização Adicionada\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

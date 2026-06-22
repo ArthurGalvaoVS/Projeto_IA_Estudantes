@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Estudantes_IA"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "01918199-4e79-4bd1-a8f5-04571536a1e7"
+  }
+}

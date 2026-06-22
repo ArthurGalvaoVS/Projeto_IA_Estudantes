@@ -1,0 +1,268 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.1.0/schema.json",
+  "displayName": "Voltar pra VE",
+  "name": "64ac55bee795e7e5adcc",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "908b16d1524a0910a2a1",
+    "sections": {
+      "908b16d1524a0910a2a1": {
+        "visualContainers": {
+          "b00bb810db877d6c43a1": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "b81349c0a947317899cc": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "334a3750e156027ce280": {
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dim_burnout"
+                            }
+                          },
+                          "Property": "Burnout_Risk_Level"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_area"
+                        }
+                      },
+                      "Property": "Major_Category"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a337183a7c00a023ce57": {
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dim_area"
+                            }
+                          },
+                          "Property": "Major_Category"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_permissividade"
+                        }
+                      },
+                      "Property": "Institutional_Policy"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "85f30d3edcb0625a1531": {
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MEDIDAS"
+                        }
+                      },
+                      "Property": "Total de Areas"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "c392c6493a3736aeb70b": {
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MEDIDAS"
+                        }
+                      },
+                      "Property": "Total Alunos"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "f7ed25afccbbdec6dc2e": {
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MEDIDAS"
+                        }
+                      },
+                      "Property": "Media Ansiedade"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "9cc5b42de04e0a054b76": {
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MEDIDAS"
+                        }
+                      },
+                      "Property": "Media Dependencia"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "2d60cb21875c6ecaa60e": {
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MEDIDAS"
+                        }
+                      },
+                      "Property": "Burnout alto"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "694735a17a76668a9407": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_area"
+                        }
+                      },
+                      "Property": "Major_Category"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

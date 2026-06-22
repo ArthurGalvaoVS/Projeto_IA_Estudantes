@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Estudantes_IA"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b090d7ad-ae65-4225-b21d-f45433775b3b"
+  }
+}
